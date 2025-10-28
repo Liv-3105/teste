@@ -1,0 +1,92 @@
+.rock-salt-regular {
+    font-family: "Rock Salt", cursive;
+    font-weight: 100;
+    font-style: normal;
+    text-shadow: #b93636;
+  } 
+  a:link {color: blue; }
+  a:active {color: cornflowerblue; }
+  a:visited {color: blue; }
+  a:hover {font-weight: bold;}
+   .linha-animada {
+      position: relative;
+      width: 1500px;
+      height: 4px;
+      margin: 30px auto;
+      background: #1f2475;
+      overflow: hidden;
+      border-radius: 4px;
+    }
+
+    .linha-animada::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -50%;
+      height: 100%;
+      width: 50%;
+      background: linear-gradient(90deg, transparent, #00fff2, transparent);
+      animation: brilho-movendo 2s linear infinite;
+    }
+
+    @keyframes brilho-movendo {
+      0% {
+        left: -50%;
+      }
+      100% {
+        left: 100%;
+      }
+    } 
+body {
+   color: rgb(96, 144, 255);
+    background-image:local("thestrokes.fundo.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+.borda-grid {
+      display: grid;
+       grid-template-columns: repeat(1, 5fr);
+      gap: 20px;
+      max-width: 220px;
+      margin: 0 auto;
+    }
+   .borda {
+      background-color: #08112b;
+      padding: 10px;
+      border-radius: 12px;
+      box-shadow: 0 6px 10px rgba(187, 182, 210, 0.925);
+       transition: background 0.3s, transform 0.3s;
+    }
+    .borda:hover {
+  background: #284457;
+      transform: scale(1.1);
+    }
+    .glow-image {
+      width: 500px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(3, 45, 255, 0.8),
+                  0 0 40px rgba(8, 1, 193, 0.6),
+                  0 0 60px rgba(0, 21, 255, 0.4);
+        transition: background 0.3s, transform 0.3s;
+    }
+    .glow-image:hover {
+       background: #005c99;
+      transform: scale(1.1);
+    }
+h1{
+    font-family: "Rock Salt", cursive;
+}
+
+big{
+    font-family: "Rock Salt", cursive;
+}
+h6{
+  color:rgba(35, 0, 213, 0.8);
+  font-family: 'Arial Narrow';
+}
+h6{
+  color:rgba(78, 97, 165, 0.8);
+  font-family: 'Arial Narrow';
+}
